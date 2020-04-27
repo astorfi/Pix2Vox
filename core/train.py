@@ -61,7 +61,7 @@ def train_net(cfg):
     val_data_loader = torch.utils.data.DataLoader(dataset=val_dataset_loader.get_dataset(
         utils.data_loaders.DatasetType.VAL, cfg.CONST.N_VIEWS_RENDERING, val_transforms),
                                                   batch_size=1,
-                                                  num_workers=1,
+                                                  num_workers=0,
                                                   pin_memory=True,
                                                   shuffle=False)
 

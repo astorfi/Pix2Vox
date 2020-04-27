@@ -14,9 +14,9 @@ __C.DATASETS                                = edict()
 __C.DATASETS.SHAPENET                       = edict()
 __C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH    = './datasets/ShapeNet.json'
 # __C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH  = './datasets/PascalShapeNet.json'
-__C.DATASETS.SHAPENET.RENDERING_PATH        = '/home/hzxie/Datasets/ShapeNet/ShapeNetRendering/%s/%s/rendering/%02d.png'
+__C.DATASETS.SHAPENET.RENDERING_PATH        = '/home/sina/data/pix2vox/ShapeNetRendering/%s/%s/rendering/%02d.png'
 # __C.DATASETS.SHAPENET.RENDERING_PATH      = '/home/hzxie/Datasets/ShapeNet/PascalShapeNetRendering/%s/%s/render_%04d.jpg'
-__C.DATASETS.SHAPENET.VOXEL_PATH            = '/home/hzxie/Datasets/ShapeNet/ShapeNetVox32/%s/%s/model.binvox'
+__C.DATASETS.SHAPENET.VOXEL_PATH            = '/home/sina/data/pix2vox/ShapeNetVox32/%s/%s/model.binvox'
 __C.DATASETS.PASCAL3D                       = edict()
 __C.DATASETS.PASCAL3D.TAXONOMY_FILE_PATH    = './datasets/Pascal3D.json'
 __C.DATASETS.PASCAL3D.ANNOTATION_PATH       = '/home/hzxie/Datasets/PASCAL3D/Annotations/%s_imagenet/%s.mat'
@@ -24,11 +24,10 @@ __C.DATASETS.PASCAL3D.RENDERING_PATH        = '/home/hzxie/Datasets/PASCAL3D/Ima
 __C.DATASETS.PASCAL3D.VOXEL_PATH            = '/home/hzxie/Datasets/PASCAL3D/CAD/%s/%02d.binvox'
 __C.DATASETS.PIX3D                          = edict()
 __C.DATASETS.PIX3D.TAXONOMY_FILE_PATH       = './datasets/Pix3D.json'
-__C.DATASETS.PIX3D.ANNOTATION_PATH          = '/home/hzxie/Datasets/Pix3D/pix3d.json'
-__C.DATASETS.PIX3D.RENDERING_PATH           = '/home/hzxie/Datasets/Pix3D/img/%s/%s.%s'
-__C.DATASETS.PIX3D.VOXEL_PATH               = '/home/hzxie/Datasets/Pix3D/model/%s/%s/%s.binvox'
+__C.DATASETS.PIX3D.ANNOTATION_PATH          = '/home/sina/data/pix2vox/pix3d/pix3d.json'
+__C.DATASETS.PIX3D.RENDERING_PATH           = '/home/sina/data/pix2vox/pix3d/img/%s/%s.%s'
+__C.DATASETS.PIX3D.VOXEL_PATH               = '/home/sina/data/pix2vox/pix3d/model/%s/%s/%s.binvox'
 
-#
 # Dataset
 #
 __C.DATASET                                 = edict()
@@ -58,7 +57,7 @@ __C.CONST.CROP_IMG_H                        = 128       # Dummy property for Pas
 #
 __C.DIR                                     = edict()
 __C.DIR.OUT_PATH                            = './output'
-__C.DIR.RANDOM_BG_PATH                      = '/home/hzxie/Datasets/SUN2012/JPEGImages'
+__C.DIR.RANDOM_BG_PATH                      = '/home/sina/data/pix2vox/SUN2012/JPEGImages'
 
 #
 # Network
@@ -74,7 +73,7 @@ __C.NETWORK.USE_MERGER                      = True
 #
 __C.TRAIN                                   = edict()
 __C.TRAIN.RESUME_TRAIN                      = False
-__C.TRAIN.NUM_WORKER                        = 4             # number of data workers
+__C.TRAIN.NUM_WORKER                        = 0            # number of data workers
 __C.TRAIN.NUM_EPOCHES                       = 250
 __C.TRAIN.BRIGHTNESS                        = .4
 __C.TRAIN.CONTRAST                          = .4
